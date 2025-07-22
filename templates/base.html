@@ -1,0 +1,23 @@
+<html>
+
+    <head>
+        {% if title %}
+        <title>{{ title }}</title>
+        {% else %}
+        <title>Flask LLM</title>
+        {% endif %}
+
+        {{ bootstrap.load_css() }}
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+    </head>
+
+    <body>
+
+        {% block content %}
+        {% endblock %}
+
+    </body>
+
+</html>
