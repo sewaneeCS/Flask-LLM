@@ -11,5 +11,4 @@ def prompt(text):
         input=text
     )
     answer = completion.output_text
-    print(answer)
     return answer
