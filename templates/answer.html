@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% from 'bootstrap5/form.html' import render_form %}
+
+{% block content %}
+
+    <p class="container">
+        Prompt:
+        <br>
+        {{ pt }}
+        <br>
+        <br>
+        Response:
+        <br>
+        {{ answer }}
+        <br>
+        <br>
+        <br>
+        <a href="{{ url_for('ppt') }}">Do another prompt.</a>
+    </p>
+
+
+{% endblock %}
