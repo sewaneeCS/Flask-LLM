@@ -28,6 +28,10 @@ def answer():
         answer = prompt(pt)
     return render_template('answer.html', pt=pt, answer=answer)
 
+@app.route('/model', methods=['GET', 'POST'])
+def model():
+    return render_template('model.html')
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5002, debug=True)
