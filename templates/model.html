@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% from 'bootstrap5/form.html' import render_form %}
+
+{% block content %}
+
+    <div>
+        Model: gpt-4.1-mini
+        <br>
+        <br>
+        <br>
+        <a href="{{ url_for('ppt') }}">Return to prompt.</a>
+    </div>
+
+
+{% endblock %}
