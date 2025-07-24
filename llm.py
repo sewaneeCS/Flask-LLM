@@ -4,7 +4,7 @@ from flask_bootstrap import Bootstrap5 #type: ignore
 from flask_wtf import FlaskForm, CSRFProtect #type: ignore
 from wtforms import StringField, SubmitField #type: ignore
 
-from functions import prompt #type: ignore
+from functions import prompt, getmodel #type: ignore
 
 app = Flask(__name__)
 app.secret_key = 'tO$&!|0wkamvVia0?n$I'
@@ -30,7 +30,8 @@ def answer():
 
 @app.route('/model', methods=['GET', 'POST'])
 def model():
-    return render_template('model.html')
+    model = getmodel()
+    return render_template('model.html', model=model)
 
 
 if __name__ == '__main__':
