@@ -1,5 +1,5 @@
-# LLMConnection
+# Flask-LLM
 
-Connecting an LLM to a Flask web app. Very rudimentary code at this point in time.
-
-The route '/model' is also available to see which model is being used and must be typed in manually.
+Flask web app to send queries to an LLM (currently ). Very rudimentary at this point.
+The index route '/' displays a query form and submits to connected LLM.
+The route '/model' is also available to see which model is being used; must be typed in manually.
